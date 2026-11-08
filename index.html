@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0F1A">
+<title>Vlucht LB0811</title>
+<meta name="description" content="Instappen alleen voor Schatjepoepie. Zet je geluid aan.">
+<meta property="og:title" content="Vlucht LB0811 · alleen voor Schatjepoepie">
+<meta property="og:description" content="Instappen alleen voor Schatjepoepie. Zet je geluid aan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vibelegend98.github.io/lb0811/">
+<meta property="og:image" content="https://vibelegend98.github.io/lb0811/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0F1A'/%3E%3Cpath d='M14 36l36-14-10 28-6-10-10 6z' fill='%23F7C948'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/InstrumentSerif-italic-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/SpaceMono-normal-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="stage" aria-live="polite">
+
+  <!-- 0 · CHECK-IN -->
+  <section class="scene s-checkin" data-scene="checkin">
+    <div class="ck-sky"></div>
+    <div class="ck-runway" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <header class="ck-top"><span>VLUCHT LB0811</span><span>GATE 08·11</span></header>
+    <div class="ck-body">
+      <p class="ck-greet" id="greet">Goedenavond, passagier.</p>
+      <h1 class="ck-title">Deze vlucht is<br><em>alleen voor jou.</em></h1>
+      <p class="ck-sub">Zet je geluid aan en bevestig je identiteit.</p>
+    </div>
+    <button class="ck-finger" id="finger" aria-label="Houd je duim hier om in te checken">
+      <svg class="ck-ring" viewBox="0 0 120 120"><circle cx="60" cy="60" r="56" class="ring-bg"/><circle cx="60" cy="60" r="56" class="ring-fg" id="ring" pathLength="1"/></svg>
+      <svg class="ck-print" viewBox="0 0 100 100" id="print">
+        <path pathLength="1" d="M26 34 C34 18 50 12 64 16 C70 18 74 20 78 24"/>
+        <path pathLength="1" d="M20 60 C17 40 30 22 52 22 C70 22 82 36 82 52 C82 56 82 58 81 61"/>
+        <path pathLength="1" d="M28 72 C23 56 28 34 50 32 C68 30 76 45 74 60 C73 66 73 70 75 74"/>
+        <path pathLength="1" d="M37 80 C31 64 35 42 50 41 C62 40 66 52 64 64 C63 72 66 78 70 81"/>
+        <path pathLength="1" d="M46 86 C42 72 42 51 50 51 C58 51 57 62 56 70 C55 78 58 84 62 87"/>
+        <path pathLength="1" d="M50 61 C50 71 50 81 54 91"/>
+        <path pathLength="1" d="M18 46 C19 42 20 40 22 37"/>
+      </svg>
+      <span class="ck-scan"></span>
+    </button>
+    <p class="ck-label" id="fingerLabel">Instapkaart laden…</p>
+  </section>
+
+  <!-- 1 · GEFELICITEERD -->
+  <section class="scene s-bday" data-scene="birthday">
+    <div class="gl-slot full" id="bdSlot"></div>
+    <div class="bd-shade"></div>
+    <div class="bd-text" id="bdText">
+      <p class="bd-date">08 · 11</p>
+      <h1>Gefeliciteerd,<br><em>Schatjepoepie.</em></h1>
+      <p class="bd-sub">Zelfs Mount Kenya wist het al.</p>
+    </div>
+  </section>
+
+  <!-- 2..10 · PASPOORT -->
+  <section class="scene s-book" data-scene="book">
+    <div class="table"></div>
+    <div class="book" id="book"></div>
+  </section>
+
+  <!-- 11 · VERTREKBORD -->
+  <section class="scene s-board" data-scene="board">
+    <div class="bo-wrap">
+      <header class="bo-head"><span class="bo-plane">✈</span><span class="bo-nl">VERTREK</span><span class="bo-en">DEPARTURES</span><span class="bo-clock">08:11</span></header>
+      <div class="bo-list">
+        <div><span>06:55</span><span>KL1007</span><span>LONDEN</span><span class="dim">VERTROKKEN</span></div>
+        <div><span>07:30</span><span>HV5671</span><span>ALICANTE</span><span class="dim">VERTROKKEN</span></div>
+        <div><span>07:50</span><span>KL1591</span><span>ATHENE</span><span class="warn">VERTRAAGD</span></div>
+      </div>
+      <div class="bo-main">
+        <p class="bo-label"><span>08:11</span> VLUCHT LB0811 · BESTEMMING</p>
+        <div class="flaps big" id="destFlaps"></div>
+        <div class="bo-row2">
+          <div><p class="bo-label">GATE</p><div class="flaps small" id="gateFlaps"></div></div>
+          <div><p class="bo-label">STATUS</p><div class="flaps small" id="statusFlaps"></div></div>
+        </div>
+      </div>
+      <p class="bo-quip" id="quip">&nbsp;</p>
+    </div>
+  </section>
+
+  <!-- 13 · TARTAN -->
+  <section class="scene s-tartan" data-scene="tartan">
+    <div class="tiles" id="tiles"></div>
+    <p class="ta-from" id="taFrom">Na Parijs…</p>
+    <div class="ta-plaque" id="plaque">
+      <span class="pl-small">VOLGENDE BESTEMMING</span>
+      <span class="pl-big">Edinburgh</span>
+      <span class="pl-small">SCHATJEPOEPIE &amp; BEAU · VOORJAAR 2027</span>
+    </div>
+    <p class="ta-sub" id="taSub">Doedelzakken op de Royal Mile, whisky bij de haard en uitzicht vanaf Arthur's Seat. Met z'n tweeën.</p>
+    <div class="ta-piper" id="piper"></div>
+  </section>
+
+  <!-- 14 · BOARDING PASS -->
+  <section class="scene s-pass" data-scene="pass">
+    <div class="ps-bg"></div>
+    <p class="ps-top">Je instapkaart</p>
+    <div class="bp" id="bp">
+      <div class="bp-main">
+        <div class="bp-head"><span class="bp-air">SCHATJEPOEPIE &amp; BEAU AIRWAYS</span><span class="bp-kind">BOARDING PASS</span></div>
+        <div class="bp-route">
+          <div class="bp-port"><b>AMS</b><small>Amsterdam</small></div>
+          <div class="bp-arc"><svg viewBox="0 0 120 40"><path d="M6 34 Q60 -6 114 34" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 4"/><path d="M52 6 l14 6-14 6 3-6z" fill="currentColor"/></svg></div>
+          <div class="bp-port"><b>EDI</b><small>Edinburgh</small></div>
+        </div>
+        <div class="bp-grid">
+          <div><label>Passagier</label><span>SCHATJEPOEPIE</span></div>
+          <div><label>Vlucht</label><span>LB0811</span></div>
+          <div><label>Datum</label><span>VOORJAAR 2027</span></div>
+          <div><label>Vertrek</label><span>ALS JIJ KAN</span></div>
+          <div><label>Stoel</label><span>NAAST BEAU</span></div>
+          <div><label>Klasse</label><span>JARIG</span></div>
+          <div><label>Gate</label><span>08·11</span></div>
+          <div><label>Bagage</label><span>ZIN IN</span></div>
+        </div>
+      </div>
+      <div class="bp-perf"></div>
+      <div class="bp-stub no-tap" id="stub">
+        <div class="bp-barcode" id="barcode"></div>
+        <p>Inleveren bij Beau voor één (1) reis naar Edinburgh.</p>
+        <span class="bp-tear" id="tearHint">⟵ veeg om af te scheuren ⟶</span>
+      </div>
+    </div>
+    <p class="ps-after" id="psAfter">Bewaar ’m goed.</p>
+  </section>
+
+  <!-- 15 · REISPOSTER -->
+  <section class="scene s-poster" data-scene="poster">
+    <div class="po-art" id="poArt"></div>
+    <img class="po-couple" id="poCouple" src="img/samen-cutout.webp" alt="Schatjepoepie en Beau">
+    <div class="po-title"><h1>Edinburgh</h1><p>SCHATJEPOEPIE &amp; BEAU · VOORJAAR 2027</p></div>
+    <div class="po-foot">
+      <p class="po-line">De volgende foto maken we daar.</p>
+      <div class="po-btns">
+        <a class="btn" id="btnReply" href="#" target="_blank" rel="noopener">Stuur Beau een berichtje</a>
+        <button class="btn ghost" id="btnAgain" type="button">Nog een keer</button>
+      </div>
+      <p class="po-credits">Muziek: Mixkit · “Local Forecast - Elevator” Kevin MacLeod (incompetech.com), CC BY 4.0</p>
+    </div>
+  </section>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <button class="mute" id="mute" aria-label="Geluid aan of uit" type="button">
+    <svg viewBox="0 0 24 24"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="w1" d="M16 9.5a3.5 3.5 0 0 1 0 5" /><path class="w2" d="M18.5 7a7 7 0 0 1 0 10"/><path class="x" d="M16 9l5 6M21 9l-5 6"/></svg>
+  </button>
+  <div class="hint" id="hint">tik om verder te gaan <span>›</span></div>
+  <div class="flash" id="flash"></div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
